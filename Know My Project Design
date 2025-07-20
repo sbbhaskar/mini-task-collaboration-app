@@ -1,0 +1,61 @@
+Structure
+mini-task-collaboration-app/
+├── backend/
+│   ├── server.js
+│   ├── config/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   ├── pages/
+│   ├── components/
+│   ├── App.jsx
+│   └── package.json
+├── .gitignore
+└── README.md
+________________________________________
+.gitignore Coverage
+Include this to prevent committing secrets or node modules:
+# Environment
+.env
+# Dependencies
+node_modules/
+# Build outputs
+dist/
+.vscode/
+________________________________________
+README.md Content
+Here's a polished README template you can drop in:
+Mini Task Collaboration App
+**Full-stack MERN app** with user auth, role-based access, and task management. Built with Node.js, Express, MongoDB, React, and Tailwind CSS.
+🚀 Features
+- User registration & login (hashed passwords, session auth)
+- Admin view & delete any user's task
+- Users: create, edit, delete, mark done tasks
+- Responsive UI with Tailwind CSS
+- Role-based routing for dashboard and admin panel
+⚙️ Getting Started
+Clone repo
+git clone https://github.com/sbbhaskar/mini-task-collaboration-app.git
+cd mini-task-collaboration-app
+Setup Backend
+cd backend
+npm install
+Add .env with MONGO_URI, SESSION_SECRET
+npm run dev
+Setup Frontend
+cd ../frontend
+npm install
+npm run dev
+Navigate to `http://localhost:5173`
+---
+🧭 Project Structure
+
+backend/      — API, auth, models, routes
+frontend/     — React SPA (pages & components)
+README.md     — This project overview
+.gitignore    — Keeps node_modules, .env out of repo
+________________________________________
